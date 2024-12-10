@@ -23,7 +23,6 @@ public class Zona {
     public int cantidadAnimales() {
         return Animal.getTotalAnimales();
     }
-
     public String getNombre() {
         return nombre;
     }
