@@ -21,7 +21,7 @@ public class Zona {
     }
 
     public int cantidadAnimales() {
-        return animales.size();
+        return Animal.getTotalAnimales();
     }
 
     // Getters y Setters

@@ -12,7 +12,9 @@ public class Animal {
     public Animal() {
         totalAnimales++;
     }
-
+    public int size(){
+        return totalAnimales;
+    }
     public Animal(String nombre, int edad, String habitat, String genero) {
         this.nombre = nombre;
         this.edad = edad;
