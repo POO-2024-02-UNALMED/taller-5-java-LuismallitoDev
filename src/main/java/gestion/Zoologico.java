@@ -20,14 +20,14 @@ public class Zoologico {
     public void agregarZonas(Zona zona) {
         this.zonas.add(zona);
     }
-
     public int cantidadTotalAnimales() {
         int total = 0;
-        for (Zona zona : zonas) {   
+        for (Zona zona : zonas) {
             total += zona.cantidadAnimales();
         }
         return total;
     }
+    
 
     public String getNombre() {
         return nombre;
