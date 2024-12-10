@@ -69,7 +69,9 @@ public class Reptil extends Animal {
     public static int getSerpientes() {
         return serpientes;
     }
-
+    public String movimiento(){
+        return "reptar";
+    }
     public static void setSerpientes(int serpientes) {
         Reptil.serpientes = serpientes;
     }

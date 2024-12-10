@@ -41,7 +41,9 @@ public class Mamifero extends Animal {
     public void setPelaje(boolean pelaje) {
         this.pelaje = pelaje;
     }
-
+    public String movimiento(){
+        return "desplazarse";
+    }
     public int getPatas() {
         return patas;
     }
