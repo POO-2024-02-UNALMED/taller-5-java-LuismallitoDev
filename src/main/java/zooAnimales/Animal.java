@@ -1,4 +1,5 @@
 package zooAnimales;
+
 import gestion.*;
 
 public class Animal {
@@ -12,9 +13,11 @@ public class Animal {
     public Animal() {
         totalAnimales++;
     }
-    public int size(){
+
+    public int size() {
         return totalAnimales;
     }
+
     public Animal(String nombre, int edad, String habitat, String genero) {
         this.nombre = nombre;
         this.edad = edad;
@@ -25,10 +28,10 @@ public class Animal {
 
     public static String totalPorTipo() {
         return "Mamiferos: " + Mamifero.cantidadMamiferos() + "\n" +
-               "Aves: " + Ave.cantidadAves() + "\n" +
-               "Reptiles: " + Reptil.cantidadReptiles() + "\n" +
-               "Peces: " + Pez.cantidadPeces() + "\n" +
-               "Anfibios: " + Anfibio.cantidadAnfibios();
+                "Aves: " + Ave.cantidadAves() + "\n" +
+                "Reptiles: " + Reptil.cantidadReptiles() + "\n" +
+                "Peces: " + Pez.cantidadPeces() + "\n" +
+                "Anfibios: " + Anfibio.cantidadAnfibios();
     }
 
     public String movimiento() {
@@ -37,15 +40,16 @@ public class Animal {
 
     @Override
     public String toString() {
-        if (zona != null) {
-            return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + ", mi genero es " + genero +
-                   ", la zona en la que me ubico es " + zona.getNombre() + ", en el " + zona.getZoo().getNombre() + ".";
+        if (this.zona != null) {
+            return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat
+                    + " y mi genero es " + genero + "la zona en la que me ubico es " + zona + ", en el "
+                    + zona.getZoo();
         } else {
-            return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + ", mi genero es " + genero + ".";
+            return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat
+                    + " y mi genero es " + genero;
         }
     }
 
-    
     public static int getTotalAnimales() {
         return totalAnimales;
     }
