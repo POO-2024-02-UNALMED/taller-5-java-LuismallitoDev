@@ -9,12 +9,10 @@ public class Anfibio extends Animal {
     private String colorPiel;
     private boolean venenoso;
 
-    // Constructor vacío
     public Anfibio() {
         listado.add(this);
     }
 
-    // Constructor con parámetros
     public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
         super(nombre, edad, habitat, genero);
         this.colorPiel = colorPiel;
@@ -22,7 +20,6 @@ public class Anfibio extends Animal {
         listado.add(this);
     }
 
-    // Métodos de creación específicos
     public static Anfibio crearRana(String nombre, int edad, String genero) {
         ranas++;
         Anfibio rana = new Anfibio(nombre, edad, "selva", genero, "rojo", true);
@@ -35,7 +32,6 @@ public class Anfibio extends Animal {
         return salamandra;
     }
 
-    // Métodos estáticos específicos
     public static int cantidadAnfibios() {
         return listado.size();
     }
@@ -45,7 +41,6 @@ public class Anfibio extends Animal {
         return "saltar";
     }
 
-    // Getters y setters
     public static ArrayList<Anfibio> getListado() {
         return listado;
     }

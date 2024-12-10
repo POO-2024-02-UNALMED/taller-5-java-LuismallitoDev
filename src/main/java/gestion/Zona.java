@@ -24,7 +24,6 @@ public class Zona {
         return Animal.getTotalAnimales();
     }
 
-    // Getters y Setters
     public String getNombre() {
         return nombre;
     }

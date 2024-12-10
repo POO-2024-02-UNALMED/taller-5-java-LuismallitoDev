@@ -38,7 +38,6 @@ public class Pez extends Animal {
         return "nadar";
     }
 
-    // Getters y Setters
     public static ArrayList<Pez> getListado() {
         return listado;
     }

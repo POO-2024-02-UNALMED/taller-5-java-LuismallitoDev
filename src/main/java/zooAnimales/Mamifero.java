@@ -34,7 +34,6 @@ public class Mamifero extends Animal {
         return listado.size();
     }
 
-    // Getters y Setters
     public boolean isPelaje() {
         return pelaje;
     }

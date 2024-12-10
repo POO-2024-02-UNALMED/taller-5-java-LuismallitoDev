@@ -29,7 +29,6 @@ public class Zoologico {
         return total;
     }
 
-    // Getters y Setters
     public String getNombre() {
         return nombre;
     }

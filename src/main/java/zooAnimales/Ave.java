@@ -30,7 +30,6 @@ public class Ave extends Animal {
         return listado.size();
     }
 
-    // Getters y Setters
     public String getColorPlumas() {
         return colorPlumas;
     }

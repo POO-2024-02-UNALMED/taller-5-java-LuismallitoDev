@@ -45,7 +45,7 @@ public class Animal {
         }
     }
 
-    // Getters y Setters
+    
     public static int getTotalAnimales() {
         return totalAnimales;
     }

@@ -34,7 +34,6 @@ public class Reptil extends Animal {
         return listado.size();
     }
 
-    // Getters y Setters
     public String getColorEscamas() {
         return colorEscamas;
     }
